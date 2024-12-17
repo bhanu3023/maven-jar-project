@@ -60,6 +60,20 @@
                 </configuration>
             </plugin>
 
+            <!-- Jar Plugin for creating executable jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <Main-Class>com.yhayashi30.sample.App</Main-Class>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+
             <!-- Assembly Plugin for creating jar with dependencies -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
