@@ -6,4 +6,4 @@ COPY **/*.jar /app/your-application.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "your-application.jar"]
+ENTRYPOINT ["java", "-jar", "/app/your-application.jar"]
